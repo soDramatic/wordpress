@@ -14,7 +14,7 @@ public class BlogPage {
 
     private static final String NEW_BLOG = "//*[contains(@class, 'gridicons-create')]";
     private static final String TITLE = "//div/input[contains(@class, 'editor-title')]";
-    private static final String CONTENTS = "//iframe[contains(@id, 'tinymce-1_ifr')]";
+    private static final String CONTENTS = "//iframe[@id='tinymce-1_ifr']";
     private static final String BOLD = "//i[contains(@class,'mce-i-bold')]";
     private static final String FRAME = "//body/p";
     private static final String PUBLISH_BUTTON = "//div/button[contains(text(),'Opublikuj')]";
@@ -61,11 +61,13 @@ public class BlogPage {
         return frame;
     }
 
+
     public WebElement getPublishButton(){
         return publishButton;
     }
 
     public WebElement getLookEntry(){
+
         return lookEntry;
     }
 
